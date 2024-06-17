@@ -14,9 +14,9 @@ RUN pip install --upgrade pip && \
     adduser \
         --disabled-password \
         --no-create-home \
-        django-user
+        django
 
-USER django-user
+USER django
 
 FROM prod as dev
 USER root
